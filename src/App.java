@@ -1,4 +1,3 @@
-import java.util.HashSet;
 import java.util.Set;
 
 public class App {
@@ -7,6 +6,7 @@ public class App {
         runHashSet(); 
         runLinkedHashSet();
         runTreeSet();
+        runTreeComparador();
     }
 
     private static void runHashSet() {
@@ -39,6 +39,15 @@ public class App {
         System.out.println("Elementos del TreeSet (Orden alfabetico):");
         for (String elemento : ejemploTreeSet) {
             System.out.println(elemento);
+        }
+    }
+    private static void runTreeComparador(){
+        Sets miTreeCom = new Sets();
+        Set<String> ejemploCom = miTreeCom.contruirTreeSetConComparador();
+        System.out.println("----- TreeSetComparador -----");
+        System.out.println("Elemento del Comparador" );
+        for (String elemento : ejemploCom) {
+            System.out.println( elemento );
         }
     }
 }
